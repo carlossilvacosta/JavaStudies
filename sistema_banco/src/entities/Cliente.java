@@ -41,6 +41,7 @@ public class Cliente {
 	
 	public Conta abrirConta(String numero) {
 		if(conta == null) {
+			System.out.println("Parabéns, vc abriu uma conta!");
 			conta = new Conta(numero, this);
 			return conta;
 		} else {
